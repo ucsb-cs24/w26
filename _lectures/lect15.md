@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-03-03
 num: "lect15"
-desc: "Week 9: Graph Algorithms and Applications"
-ready: true
+sequence: 15
+desc: "Graph Algorithms and Applications (QUIZ 5)"
+ready: false
 pre-reading: "15.3- 15.4"
-pdfurl: /lectures/CS24_Graph_Search.pdf
-annotatedpdfurl: /lectures/CS24_Graph_Search_ann.pdf
-annotatedready: true
+pdfurl: /lectures/CS24_PQ_GraphSearchComplexity.pdf
 ---
 
 # Code from lecture

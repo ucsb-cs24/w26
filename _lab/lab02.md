@@ -3,8 +3,8 @@ layout: lab
 num: lab02
 ready: true
 desc: "Implementing a linked list- OOP style"
-assigned: 2025-04-04 9:00:00.00-8
-due: 2026-01-24 23:59:00.00-8
+assigned: 2026-01-12 09:00:00.00-08:00
+due: 2026-01-16 23:59:00.00-08:00
 ---
 
 ## Collaboration policy

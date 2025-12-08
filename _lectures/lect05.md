@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-01-22
 num: "lect05"
-desc: "Week 3: Efficient search with Binary Search Trees"
-ready: true
+sequence: 5
+desc: "Efficient search with Binary Search Trees"
+ready: false
 pre-reading: "12.1, 10.1 - 10.3"
 pdfurl: /lectures/CS24_BST_part1.pdf
-annotatedpdfurl: /lectures/CS24_BST_part1_ann.pdf
-annotatedready: true
 ---
 
 # Code from lecture

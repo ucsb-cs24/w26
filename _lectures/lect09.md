@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-02-05
 num: "lect09"
-desc: "Week 5: Stacks "
-ready: true
+sequence: 9
+desc: "Stacks"
+ready: false
 pre-reading: "7.1 - 7.4"
 pdfurl: /lectures/CS24_Stacks.pdf
-annotatedpdfurl: /lectures/CS24_Stacks_ann.pdf
-annotatedready: true
 ---
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})

@@ -1,7 +1,7 @@
 ---
 num: "lect01"
-lecture_date: 2026-01-06
-desc: "Week 1: Course introduction, CS16 review"
+sequence: 1
+desc: "Course introduction, CS16 review"
 ready: true
 pre-reading: ""
 pdfurl: /lectures/CS24_Lecture1.pdf

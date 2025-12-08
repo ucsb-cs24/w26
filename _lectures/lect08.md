@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-02-03
 num: "lect08"
-desc: "Week 4: Space complexity, best/worst case analysis "
-ready: true
+sequence: 8
+desc: "Space complexity, best/worst case analysis (QUIZ 2)"
+ready: false
 pre-reading: "1.2"
 pdfurl: /lectures/CS24_Complexity_Analysis.pdf
-annotatedpdfurl: /lectures/CS24_Complexity_Analysis_ann.pdf
-annotatedready: true
 ---
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})

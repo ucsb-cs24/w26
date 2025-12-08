@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-01-29
 num: "lect07"
-desc: "Week 4: Iterators"
-ready: true
+sequence: 7
+desc: "Iterators"
+ready: false
 pre-reading: "3.1 - 3.3"
 pdfurl: /lectures/CS24_BST_iterators.pdf
-annotatedpdfurl: /lectures/CS24_BST_iterators_ann.pdf
-annotatedready: true
 ---
 
 # Code from lecture

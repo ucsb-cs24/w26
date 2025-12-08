@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-02-24
 num: "lect13"
-desc: "Week 8: Graph representation with applications to Neural Networks"
-ready: true
+sequence: 13
+desc: "Graph representation with applications to Neural Networks"
+ready: false
 pre-reading: "15.1 - 15.2"
 pdfurl: /lectures/CS24_Graph_Representation.pdf
-annotatedpdfurl: /lectures/CS24_Graph_Representation_ann.pdf
-annotatedready: true
 ---
 
 # Code from lecture

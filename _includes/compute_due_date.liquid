@@ -1,0 +1,32 @@
+{% comment %}
+  Computes an assignment due date based on:
+  - include.start_sequence: Lecture number when assigned
+  - include.days_after: Number of days after that lecture
+  - include.day_of_week: Target day of week (1=Mon, 5=Fri)
+
+  Returns: YYYY-MM-DD formatted date
+{% endcomment %}
+
+{% comment %} First compute the lecture date {% endcomment %}
+{% capture start_date %}{% include compute_lecture_date.liquid sequence=include.start_sequence %}{% endcapture %}
+{% assign start_date = start_date | strip %}
+{% assign start_timestamp = start_date | date: "%s" | plus: 0 %}
+
+{% comment %} Add the specified number of days {% endcomment %}
+{% assign one_day = 86400 %}
+{% assign days_to_add = include.days_after | times: one_day %}
+{% assign target_timestamp = start_timestamp | plus: days_to_add %}
+
+{% comment %} If target day specified, find the next occurrence {% endcomment %}
+{% if include.day_of_week %}
+  {% for i in (0..7) %}
+    {% assign check_timestamp = target_timestamp | plus: i | times: one_day %}
+    {% assign day_of_week = check_timestamp | date: "%u" %}
+    {% if day_of_week == include.day_of_week %}
+      {{ check_timestamp | date: "%Y-%m-%d" }}
+      {% break %}
+    {% endif %}
+  {% endfor %}
+{% else %}
+  {{ target_timestamp | date: "%Y-%m-%d" }}
+{% endif %}

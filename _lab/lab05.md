@@ -3,8 +3,8 @@ layout: lab
 num: lab05
 ready: true
 desc: "Implementing a min-heap"
-assigned: 2025-05-09 9:00:00.00-8
-due: 2025-05-23 23:59:00.00-8
+assigned: 2026-02-02 09:00:00.00-08:00
+due: 2026-02-06 23:59:00.00-08:00
 ---
 
 # Collaboration policy

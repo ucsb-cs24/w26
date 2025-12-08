@@ -64,9 +64,22 @@ Quizzes are given during lecture to help you stay on track and assess your under
 ### LeetCode Practice (10%)
 Complete 10 medium LeetCode problems from the assigned list to practice algorithmic problem-solving in preparation for quizzes and the mock interview.
 - **Setup**: Create a LeetCode account (recommended format: `DS_[YourInitials]_[RandomNumber]`, e.g., `DS_JD_1234`).
-- **Submission**: For each problem set (lp01-lp05), submit your accepted solution links via Gradescope by the posted deadline. Each assignment will have questions for 2 problems - submit the direct link to your accepted submission (e.g., `https://leetcode.com/problems/problem-name/submissions/123456/`), not the problem description page. To get the correct link: after solving a problem, go to your submission history, click on your accepted submission, and copy the URL from your browser's address bar.
+- **Submission**: For each problem set (lp01-lp05), submit via Gradescope by the posted deadline:
+  1. The direct link to your submission (e.g., `https://leetcode.com/problems/problem-name/submissions/123456/`), not the problem description page. To get the correct link: after solving a problem, go to your submission history, click on your submission, and copy the URL from your browser's address bar.
+  2. A screenshot showing your test results. The screenshot must clearly show the problem name, your submission status, and how many test cases passed.
+  3. Your complete code solution (copy-paste from LeetCode).
+  4. A written reflection answering these questions (2-3 sentences each):
+     - **Algorithm**: What algorithm/approach did you use? (e.g., "I used a sliding window with a hash map...")
+     - **Data Structures**: Which data structures did you use and why?
+     - **Complexity**: What is the time complexity and space complexity of your solution? Briefly explain why.
+     - **Challenges**: What was the most difficult part? If your solution didn't pass all test cases, what cases failed and why do you think that happened?
 - **Task**: Complete at least 2 problems from each of the 5 problem sets (lp01-lp05) for a total of 10 problems by Friday, Week 9, 11:59 PM.
-- **Grading**: Each accepted (correct) solution is worth 1%. Only submissions that pass all LeetCode test cases receive credit - there is no partial credit. You must submit at least 10 solution links to receive any credit (e.g., 8 accepted = 8%; < 10 submitted = 0%).
+- **Grading**: Each problem is worth 1%, awarded as follows:
+  - **Full credit (1%)**: Solution passes all test cases + thoughtful reflection demonstrating understanding
+  - **Partial credit (0.5%)**: Solution passes most test cases (>50%) + reflection shows genuine effort and understanding of approach
+  - **No credit (0%)**: Incomplete submission, minimal effort, or reflection indicates lack of understanding
+  - Submissions missing any required component (link, screenshot, or reflection) receive no credit
+  - You must submit at least 10 complete submissions to receive any credit (e.g., 8 problems with full credit = 8%; 6 full + 4 partial = 8%; < 10 submitted = 0%)
 
 ### Mock Interview (10%)
 Complete one 20-minute mock technical interview with a TA or ULA to demonstrate your problem-solving and communication skills.

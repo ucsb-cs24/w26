@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-03-05
 num: "lect16"
-desc: "Week 9: (PA03) DFS based backpropagation"
-ready: true
+sequence: 16
+desc: "(PA03) DFS based backpropagation"
+ready: false
 pre-reading: " Required videos in pa03 tutorial"
 pdfurl: /lectures/CS24-NNBackprop.pdf
-annotatedpdfurl: /lectures/CS24-NNBackprop_ann.pdf
-annotatedready: true
 ---
 
 # Code from lecture

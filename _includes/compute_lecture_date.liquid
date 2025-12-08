@@ -1,0 +1,66 @@
+{% comment %}
+  Computes a lecture date based on:
+  - include.sequence: The lecture number (1 for first lecture, 2 for second, etc.)
+  - site.start_date: First day of classes
+  - site.lecture_days: Array of weekday numbers (1=Mon, 2=Tue, 3=Wed, 4=Thu, 5=Fri)
+  - site.holidays: Array of holiday dates to skip
+
+  Returns: YYYY-MM-DD formatted date
+{% endcomment %}
+
+{% assign sequence = include.sequence | minus: 1 %}
+{% assign start_timestamp = site.start_date | date: "%s" | plus: 0 %}
+{% assign current_timestamp = start_timestamp %}
+{% assign lectures_found = 0 %}
+{% assign one_day = 86400 %}
+{% assign first_lecture_day_skipped = false %}
+
+{% comment %} Auto-detect Week 0: if start_week is 0, enable Week 0 behavior {% endcomment %}
+{% assign has_week_0 = false %}
+{% if site.start_week == 0 %}
+  {% assign has_week_0 = true %}
+{% endif %}
+
+{% comment %} Iterate through days until we find the Nth lecture day {% endcomment %}
+{% for i in (0..365) %}
+  {% assign current_date = current_timestamp | date: "%Y-%m-%d" %}
+  {% assign day_of_week = current_timestamp | date: "%u" | plus: 0 %}
+
+  {% comment %} Check if this day is a lecture day {% endcomment %}
+  {% assign is_lecture_day = false %}
+  {% for lecture_day in site.lecture_days %}
+    {% if day_of_week == lecture_day %}
+      {% assign is_lecture_day = true %}
+    {% endif %}
+  {% endfor %}
+
+  {% comment %} Handle Week 0: skip first occurrence of first lecture day {% endcomment %}
+  {% if has_week_0 and is_lecture_day and first_lecture_day_skipped == false %}
+    {% assign first_day = site.lecture_days | first %}
+    {% if day_of_week == first_day %}
+      {% assign first_lecture_day_skipped = true %}
+      {% assign is_lecture_day = false %}
+    {% endif %}
+  {% endif %}
+
+  {% comment %} Check if this day is a holiday {% endcomment %}
+  {% assign is_holiday = false %}
+  {% if site.holidays %}
+    {% for holiday in site.holidays %}
+      {% if holiday.date == current_date %}
+        {% assign is_holiday = true %}
+      {% endif %}
+    {% endfor %}
+  {% endif %}
+
+  {% comment %} Count this lecture if it's a lecture day and not a holiday {% endcomment %}
+  {% if is_lecture_day and is_holiday == false %}
+    {% if lectures_found == sequence %}
+      {{ current_date }}
+      {% break %}
+    {% endif %}
+    {% assign lectures_found = lectures_found | plus: 1 %}
+  {% endif %}
+
+  {% assign current_timestamp = current_timestamp | plus: one_day %}
+{% endfor %}

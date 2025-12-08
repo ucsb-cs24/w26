@@ -3,8 +3,8 @@ layout: lab
 num: lab01  
 ready: true  
 desc: "LeetCode 3-Sum + Empirical Runtime Analysis"  
-assigned: 2026-01-06 09:00:00.00-08:00  
-due: 2026-01-17 23:59:00.00-08:00  
+assigned: 2026-01-05 09:00:00.00-08:00
+due: 2026-01-09 23:59:00.00-08:00  
 ---
 
 ## Learning Goals  

@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-02-10
 num: "lect10"
-desc: "Week 5: Queues, Breadth First Traversal, and Complete Binary Trees "
-ready: true
+sequence: 10
+desc: "Queues, Breadth First Traversal, and Complete Binary Trees"
+ready: false
 pre-reading: "8.1 - 8.4"
 pdfurl: /lectures/CS24_Queues.pdf
-annotatedpdfurl: /lectures/CS24_Queues_ann.pdf
-annotatedready: true
 ---
 
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})

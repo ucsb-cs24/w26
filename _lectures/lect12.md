@@ -1,11 +1,9 @@
 ---
-lecture_date: 2026-02-19
 num: "lect12"
-desc: "Week 7: Hashtables: from theory to practice"
-ready: true
+sequence: 12
+desc: "Hashtables: from theory to practice (QUIZ 4)"
+ready: false
 pdfurl: /lectures/CS24_Hashtables.pdf
-annotatedpdfurl: /lectures/CS24_Hashtables_ann.pdf
-annotatedready: true
 pre-reading: "Prof. Suri's CS 130A handout"
 ---
 

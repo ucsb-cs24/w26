@@ -14,8 +14,16 @@
 <tbody>
 {% for lect in site.lectures %}
 
+{% comment %} Compute lecture date if sequence is provided, otherwise use lecture_date {% endcomment %}
+{% if lect.sequence %}
+  {% capture computed_date %}{% include compute_lecture_date.liquid sequence=lect.sequence %}{% endcapture %}
+  {% assign display_date = computed_date | strip %}
+{% else %}
+  {% assign display_date = lect.lecture_date %}
+{% endif %}
+
 <tr class={% if lect.ready %}"ready"{% else %}"not-ready"{% endif %} >
-  <td class="lect_num"><time datetime="{{lect.lecture_date}}">{{lect.lecture_date}}</time></td>
+  <td class="lect_num"><time datetime="{{display_date}}">{{display_date}}</time></td>
   <td class="lect_num"><a href="{{lect.url | relative_url }}" data-ajax="false" aria-label="Lecture {{ lect.num }}">{{ lect.num }}</a></td>
   <!-- <td class="lect_ready">{{lect.ready}}</td> -->
   <td class="lect_desc">{{lect.desc }}{% if lect.ready%}&nbsp;(<a href="{{lect.pdfurl|relative_url}}" aria-label="Download slides for {{ lect.num }}">slides</a>){% endif%}{% if lect.annotatedready %}&nbsp;(<a href="{{lect.annotatedpdfurl|relative_url}}" aria-label="Download annotated slides for {{ lect.num }}">annotated slides</a>){% endif%}</td>

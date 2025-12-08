@@ -1,5 +1,5 @@
 ---
-num: "e02"
+num: "final"
 lecture_date: 2026-03-18
 desc: "Final Exam Instructions and Study Tips"
 ready: false

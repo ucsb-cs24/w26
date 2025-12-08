@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-02-26
 num: "lect14"
-desc: "Week 8: Graph search: Breadth and Depth first traversal"
-ready: true
+sequence: 14
+desc: "Graph search: Breadth and Depth first traversal"
+ready: false
 pre-reading: "15.3- 15.4"
 pdfurl: /lectures/CS24_Graph_Search.pdf
-annotatedpdfurl: /lectures/CS24_Graph_Search_ann.pdf
-annotatedready: true
 ---
 
 # Code from lecture

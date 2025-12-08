@@ -2,6 +2,17 @@ plugins:
   - jekyll-remote-theme
   - jekyll-include-cache
 
+# Lecture schedule configuration
+lect_repo: https://github.com/ucsb-cs24-w26/cs24-w26-lectures
+start_week: 1
+start_date: 2026-01-05  # First day of instruction
+num_weeks: 10
+extra_exam_week: true
+lecture_days: [1, 3]  # 1=Monday, 3=Wednesday (use [2, 4] for Tue/Thu)
+holidays:
+  - date: "2026-02-16"
+    desc: "Presidents Day"
+
 remote_theme: ucsb-cs-course-repos/course-repo-jekyll-theme
 #remote_theme: pmarsceill/just-the-docs@v0.3.3
 url: https://ucsb-cs24.github.io/w26
@@ -25,11 +36,6 @@ class_org:
    url: https://github.com/ucsb-cs24-w26
    githublinker: CS24 W26
 
-lect_repo: https://github.com/ucsb-cs24-w26/cs24-w26-lectures
-start_week: 1
-start_date: 2026-01-05
-num_weeks: 10
-extra_exam_week: true
 
 instructor_url: https://ucsb-cs24.github.io/instructor
 

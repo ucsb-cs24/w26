@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-01-15
 num: "lect04"
-desc: "Week 2: Linked list ADT and rule of three"
-ready: true
+sequence: 4
+desc: "Linked list ADT and rule of three (QUIZ 1)"
+ready: false
 pre-reading: "4.3 - 4.4, 5.1, 5.3"
 pdfurl: /lectures/BigThree.pdf
-annotatedpdfurl: /lectures/BigThree_ann.pdf
-annotatedready: true
 ---
 
 # Code from lecture

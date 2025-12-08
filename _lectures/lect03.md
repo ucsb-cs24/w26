@@ -1,12 +1,10 @@
 ---
 num: "lect03"
-lecture_date: 2026-01-13
-desc: "Week 2: Abstract Data Types and operator overloading"
+sequence: 3
+desc: "Abstract Data Types and operator overloading"
 pre-reading: " 2.1 - 2.5, 3.1"
-ready: true
+ready: false
 pdfurl: /lectures/CS24_Lecture3.pdf
-annotatedpdfurl: /lectures/CS24_Lecture3_ann.pdf
-annotatedready: true
 ---
 # Code from lecture
 

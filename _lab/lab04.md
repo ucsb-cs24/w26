@@ -3,8 +3,8 @@ layout: lab
 num: lab04
 ready: true
 desc: "Complexity Analysis - Part 1"
-assigned: 2025-04-25 9:00:00.00-8
-due: 2026-02-06 23:59:00.00-8
+assigned: 2026-01-26 09:00:00.00-08:00
+due: 2026-01-30 23:59:00.00-08:00
 ---
 
 

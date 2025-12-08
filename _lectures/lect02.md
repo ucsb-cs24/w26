@@ -1,7 +1,7 @@
 ---
 num: "lect02"
-lecture_date: 2026-01-08
-desc: "Week 1: Running time analysis"
+sequence: 2
+desc: "Running time analysis"
 ready: true
 pre-reading: "OP: 1.3, Dasgupta: 0.1 - 0.3"
 pdfurl: /lectures/CS24_Lecture2.pdf

@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-03-12
 num: "lect18"
-desc: "Week 10: Priority Queue Review + Complexity Analysis of BFS and DFS"
-ready: true
+sequence: 18
+desc: "Priority Queue Review + Complexity Analysis of BFS and DFS"
+ready: false
 pre-reading: ""
 pdfurl: /lectures/CS24_PQ_GraphSearchComplexity.pdf
-annotatedpdfurl: /lectures/CS24_PQ_GraphSearchComplexity_ann.pdf
-annotatedready: true
 ---
 
 ## Code written in class

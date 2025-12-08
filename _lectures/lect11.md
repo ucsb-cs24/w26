@@ -1,12 +1,10 @@
 ---
-lecture_date: 2026-02-12
 num: "lect11"
-desc: "Week 6: Binary Heaps and Priority Queues"
-ready: true
+sequence: 11
+desc: "Binary Heaps and Priority Queues (QUIZ 3)"
+ready: false
 pre-reading: "11.1 - 11.2"
 pdfurl: /lectures/CS24_BinaryHeap.pdf
-annotatedpdfurl: /lectures/CS24_BinaryHeap_ann.pdf
-annotatedready: true
 ---
 
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
