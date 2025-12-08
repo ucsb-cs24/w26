@@ -1,0 +1,31 @@
+<table class="asn_table" role="table" aria-label="Course lectures and materials">
+<caption class="sr-only">Lecture schedule with dates, materials, and readings</caption>
+
+<thead>
+<tr>
+  <th scope="col" class="asn_desc">Lecture Date</th>
+  <th scope="col" class="asn_num">Link</th>
+  <!-- <th scope="col" class="asn_ready">ready?</th> -->
+  <th scope="col" class="asn_desc">Description</th>
+  <th scope="col" class="asn_desc">Reading</th>
+</tr>
+</thead>
+
+<tbody>
+{% for lect in site.lectures %}
+
+<tr class={% if lect.ready %}"ready"{% else %}"not-ready"{% endif %} >
+  <td class="lect_num"><time datetime="{{lect.lecture_date}}">{{lect.lecture_date}}</time></td>
+  <td class="lect_num"><a href="{{lect.url | relative_url }}" data-ajax="false" aria-label="Lecture {{ lect.num }}">{{ lect.num }}</a></td>
+  <!-- <td class="lect_ready">{{lect.ready}}</td> -->
+  <td class="lect_desc">{{lect.desc }}{% if lect.ready%}&nbsp;(<a href="{{lect.pdfurl|relative_url}}" aria-label="Download slides for {{ lect.num }}">slides</a>){% endif%}{% if lect.annotatedready %}&nbsp;(<a href="{{lect.annotatedpdfurl|relative_url}}" aria-label="Download annotated slides for {{ lect.num }}">annotated slides</a>){% endif%}</td>
+  <td class="pre-reading">{{lect.pre-reading}}</td>
+</tr>
+
+{% if lect.last_before %}
+<tr><th scope="row" colspan="4" class="divider-row">{{lect.last_before}}</th></tr>
+{% endif %}
+
+{% endfor %}
+</tbody>
+</table>

@@ -1,0 +1,140 @@
+---
+title: "Syllabus"
+layout: default
+ready: true
+---
+
+# Syllabus <a name="syllabus"></a>
+
+This document and linked resources are your **primary source** for understanding course expectations. Read it carefully and contact the instructor if you receive conflicting information from other sources.
+
+**Instructor:** {{ site.instructor }} &nbsp; | &nbsp; **Office Hours:** {{ site.office_hours }} &nbsp; | &nbsp; **Lectures:** {{ site.lecture_times }}, {{ site.lecture_location }} &nbsp; | &nbsp; **Sections:** {{ site.lab_times }}, Phelps 3525
+
+**Contacting Staff:** Use Ed (link on Canvas); urgent emails to diba@ucsb.edu with "CS24" in subject
+
+**Lab/Section Attendance:** Optional but highly recommended. TAs and ULAs are available to help with assignments. Section switching is not permitted due to enrollment. Contact instructor after first lecture if you have a conflict.
+
+### Course catalog description
+
+Intermediate building blocks for solving problems using computers. Topics include intermediate object-oriented programming, data structures, object-oriented design, algorithms for manipulating these data structures and their run-time analyses. Data structures introduced include stacks, queues, lists, trees, and sets.
+
+**Prerequisites:** CS24 builds on CS16. You should be comfortable with basic C++ (data types, control structures, functions, parameter passing), arrays, C-strings, structs, classes, number systems/memory, and recursion. Review CS16 materials or consult TAs if needed.
+
+### Learning Outcomes
+By the end of this course, students will be able to:
+- **Explain** the C++ memory model, including stack vs. heap allocation and memory management.
+- **Design and implement** abstract data types (e.g., lists, trees, graphs) using object-oriented principles.
+- **Analyze** algorithm and data structure efficiency using asymptotic notation (Big-O, Big-Theta, Big-Omega).
+- **Apply** appropriate data structures to solve computational problems efficiently.
+- **Utilize** the C++ Standard Template Library (STL) effectively in program development.
+
+### Resources
+
+**Textbook:** *Data Structures and Other Objects Using C++* by Main & Savitch (primary text, also used in CS32). Additional references: [*Open Data Structures*](https://opendatastructures.org/) (Morin), [*Algorithms*](https://cseweb.ucsd.edu/~dasgupta/book/toc.pdf) (Dasgupta).
+
+**Tools & References:** [VisuAlgo](https://visualgo.net/) (data structure visualizations), [C++ Reference](https://en.cppreference.com) (STL documentation), [GDB Cheat Sheet](https://darkdust.net/files/GDB%20Cheat%20Sheet.pdf) (debugging).
+
+**Support:** Instructor office hours (see website), TA/ULA drop-in hours (Phelps 3525, times on course calendar).
+
+**In-Class Participation:** Join [iClicker Cloud](https://join.iclicker.com/AXZR). Participation is ungraded but encouraged.
+
+### Discussion Forum: Ed
+Use Ed for Q&A (link on Canvas). Post public questions when applicable; for coding issues:
+- Share the smallest relevant code snippet (not screenshots/photos).
+- Make posts private if including significant code.
+
+### Grading
+- **Quizzes**: 25% (5 quizzes during lecture, lowest dropped, second-lowest replaced by final exam score if higher)
+- **Programming Assignments**: 25% (labs + larger projects)
+- **LeetCode Practice**: 10% (preparation for quizzes and mock interview)
+- **Mock Interview**: 10%
+- **Final Exam**: 30%
+
+Grading follows standard scale.
+
+### Quizzes (25%)
+Quizzes are given during lecture to help you stay on track and assess your understanding of recent material.
+- **Schedule**: Weeks 2, 4, 6, 7, 9 (5 total quizzes)
+- **Format**: 15-20 minutes, given at the beginning or end of lecture
+- **Coverage**: Material from the previous 2-3 weeks
+- **Grading**: Each quiz is worth 5%. Your lowest quiz score is dropped. Additionally, if your final exam score is higher than your second-lowest quiz score, the final exam score will replace it.
+- **Make-ups**: No make-ups for missed quizzes; use your dropped score for absences or emergencies.
+- **Content**: Mix of conceptual questions, code reading, and short coding problems
+
+### LeetCode Practice (10%)
+Complete 10 medium LeetCode problems from the assigned list to practice algorithmic problem-solving in preparation for quizzes and the mock interview.
+- **Setup**: Create a LeetCode account (recommended format: `DS_[YourInitials]_[RandomNumber]`, e.g., `DS_JD_1234`).
+- **Submission**: For each problem set (lp01-lp05), submit your accepted solution links via Gradescope by the posted deadline. Each assignment will have questions for 2 problems - submit the direct link to your accepted submission (e.g., `https://leetcode.com/problems/problem-name/submissions/123456/`), not the problem description page. To get the correct link: after solving a problem, go to your submission history, click on your accepted submission, and copy the URL from your browser's address bar.
+- **Task**: Complete at least 2 problems from each of the 5 problem sets (lp01-lp05) for a total of 10 problems by Friday, Week 9, 11:59 PM.
+- **Grading**: Each accepted (correct) solution is worth 1%. Only submissions that pass all LeetCode test cases receive credit - there is no partial credit. You must submit at least 10 solution links to receive any credit (e.g., 8 accepted = 8%; < 10 submitted = 0%).
+
+### Mock Interview (10%)
+Complete one 20-minute mock technical interview with a TA or ULA to demonstrate your problem-solving and communication skills.
+
+**Timeline:**
+- **By end of Week 2**: Submit booking preferences form (link will be posted on course website)
+- **Weeks 5-10**: Complete your scheduled 20-minute mock interview
+
+**Format:**
+- Introduction & Behavioral (2 min) + Whiteboard Problem (5 min) + Coding (13 min) + Feedback (5 min)
+- You'll plan and implement a solution to a medium-difficulty LeetCode problem while explaining your approach
+- Evaluated on process and communication, not just correctness
+
+**Important:**
+- Book early! Slots fill up quickly with 200+ students
+- No make-ups without prior arrangement. Missing your interview = 0%
+- See [detailed guide and grading rubric](/w26/info/mock_interview/) for complete information
+
+### Late Policy
+You have **five late days** total, with a **maximum of three days** per assignment, no penalty within this limit. Beyond this, a 10% deduction applies per day (up to one week), after which no credit is given unless approved for extenuating circumstances.
+
+### Pair Programming
+Some assignments allow optional pair programming (2–3 students coding together at one terminal, like a lab partnership). Benefits include:
+- Industry relevance and employer value
+- Improved collaboration skills (feedback from UCSB CS employers)
+- Enhanced learning and grades (research-backed, positive student feedback)
+- Watch: <http://bit.ly/pair-programming-video> (10 min)
+
+### Use of AI Tools
+AI tools (e.g., ChatGPT, GitHub Copilot, Grok) can support learning but must not replace your effort. Usage rules:
+- **Permitted Use**: Allowed only for assignments labeled “AI-permitted” in instructions; prohibited elsewhere (e.g., exams, unmarked tasks).
+- **Constructive Engagement**: Use AI to:
+  - Clarify concepts (e.g., “Explain binary search trees”)
+  - Get code feedback (e.g., “Improve my queue implementation”)
+  - Explore design trade-offs (e.g., “Hash table vs. array pros/cons”)
+- **Prohibited Use**: Generating full solutions, large code segments, or completing assignments (e.g., “Write a BST in C++”) is academic dishonesty, even when permitted. Debugging help is okay; rewriting your work is not.
+- **Documentation**: Submit a log (e.g., text file or screenshots) of AI interactions for permitted assignments, showing constructive use and your own work. Earn up to a 5% assignment bonus on assignments where AI tools are permitted for thoughtful engagement (instructor’s discretion).
+- **Tool Choice**: Any AI tool is allowed; identify it in your log.
+- **Consequences**: Unauthorized use, missing logs, or misuse equals academic dishonesty (see below).
+
+### Academic Integrity
+Check each assignment’s collaboration policy—some are individual, others allow pair programming. Review UCSB’s Academic Integrity guidelines: <http://studentconduct.sa.ucsb.edu/academic-integrity>. Violations (e.g., cheating, plagiarism, unauthorized AI use) result in:
+- **First Offense**: Zero on assignment + one-letter grade drop
+- **Second Offense**: Course failure
+- All cases reported to the Office of Student Conduct
+
+Key rules:
+- No unauthorized materials, study aids, or services (see AI policy).
+- Cite all sources, including web searches, in assignments.
+- Keep graded work private (no public posting; Git repos must be private).
+- Don’t share solutions outside your pair/group.
+- No exam info from prior takers or non-approved sources (e.g., Chegg).
+- Pair programming requires joint coding, not split work; submit one version on Gradescope with partner names.
+
+### Final Exam
+The final exam is **comprehensive** and covers all course material.
+- **Date**: Wednesday, March 18, 2026
+- **Time**: 12:00 PM - 3:00 PM
+- **Location**: TBD (will be announced)
+
+**Exam Makeups**: Makeups are granted only for unavoidable emergencies (e.g., major illness), not scheduling conflicts. Check the exam date early and plan accordingly!
+
+### Disabled Students Program (DSP)
+UCSB accommodates students with disabilities via DSP (2120 Student Resource Building). Register early with documentation; accommodations are honored only through DSP. More info: <http://dsp.sa.ucsb.edu>.
+
+### Disclaimer
+Policies are accurate but may change at the instructor’s discretion within UC guidelines.
+
+[Back to Syllabus](#syllabus){: data-ajax="false"}
+
+

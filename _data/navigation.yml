@@ -1,0 +1,57 @@
+# the production_url is the url that the parent/child site have in common
+#  e.g. production_url: https://ucsb-cs24.github.io
+#  for main site http://ucsb-cs24.github.io
+#  and child sites
+#    https://ucsb-cs24.github.io/w18
+#    https://ucsb-cs24.github.io/f18
+#    https://ucsb-cs24.github.io/s19
+#    etc.
+
+production_url: https://ucsb-cs24.github.io
+
+# List the title and url for each item on navigation bar.
+# For items that should be relative urls, put the baseurl of the site
+# they come from, / for main site, and /f18, /s19, etc for child sites.
+
+home:
+   title: UCSB CS24
+   url: /
+   baseurl: /
+
+main_dropdown:
+   title: Resources
+   items:
+     - title: Topics
+       url: /topic_list/
+     - title: Resources
+       url: /resources_list/
+
+offerings:
+   title: W26
+   url: /
+   baseurl: /w26
+   items:
+      - title: W26-Home
+        url: /
+        baseurl: /w26
+
+offering_links:
+  - title: Assignments
+    url: /lab_list/
+    description: "Programming Assignments"
+  - title: Syllabus
+    url: /info/syllabus/
+    description: "Syllabus" 
+  - title: Ed
+    url: https://edstem.org/us/courses/76378/discussion
+    description: "Q&A Forum"
+  - title: Staff
+    url: /info/staff/
+    description: "Staff Profiles"
+      
+  - title: Github
+    dropdown:
+       - title: ucsb-cs24-w26
+         url: https://github.com/ucsb-cs24-w26
+
+

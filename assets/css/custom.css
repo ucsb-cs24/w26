@@ -1,0 +1,355 @@
+/*
+ * Custom CSS for CS24 W26
+ * Accessibility and Mobile Responsiveness Improvements
+ */
+
+/* ===== ACCESSIBILITY IMPROVEMENTS ===== */
+
+/* Skip to main content link for keyboard navigation */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 100;
+  font-weight: bold;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #4A90E2;
+  outline-offset: 2px;
+}
+
+/* Enhanced focus indicators for keyboard navigation */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus,
+.btn:focus,
+[tabindex]:focus {
+  outline: 3px solid #4A90E2;
+  outline-offset: 2px;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.3);
+}
+
+/* Ensure focus is visible even on dark backgrounds */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #FFD700;
+  outline-offset: 2px;
+}
+
+/* ===== COLOR CONTRAST IMPROVEMENTS (WCAG AA) ===== */
+
+/* Ensure text has sufficient contrast */
+body {
+  color: #212529;
+  background-color: #ffffff;
+}
+
+/* Link colors with better contrast */
+a {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #003d82;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #6f42c1;
+}
+
+/* Table readability */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  background-color: #003660;
+  color: #ffffff;
+  padding: 12px;
+  text-align: left;
+  font-weight: 600;
+}
+
+td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #dee2e6;
+}
+
+tr:nth-child(even) {
+  background-color: #f8f9fa;
+}
+
+tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Button contrast */
+.btn,
+button {
+  background-color: #003660;
+  color: #ffffff;
+  border: 2px solid #003660;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-weight: 500;
+}
+
+.btn:hover,
+button:hover {
+  background-color: #00509e;
+  border-color: #00509e;
+}
+
+.btn:active,
+button:active {
+  background-color: #002a4d;
+}
+
+/* ===== MOBILE RESPONSIVENESS ===== */
+
+/* Responsive typography */
+html {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    padding: 0 15px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.25rem;
+  }
+}
+
+/* Responsive tables */
+@media screen and (max-width: 768px) {
+  table {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  th,
+  td {
+    min-width: 120px;
+  }
+}
+
+/* Responsive navigation */
+@media screen and (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive code blocks */
+pre {
+  overflow-x: auto;
+  padding: 15px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 768px) {
+  pre {
+    font-size: 0.85rem;
+  }
+}
+
+/* ===== IMPROVED CONTENT READABILITY ===== */
+
+/* Better line spacing for readability */
+p,
+li {
+  line-height: 1.6;
+  margin-bottom: 1em;
+}
+
+/* Improved list styling */
+ul,
+ol {
+  padding-left: 1.5em;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+/* Better spacing for headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* Reduced header sizes for content pages */
+h1 {
+  font-size: 1.75rem !important;
+}
+
+h2 {
+  font-size: 1.4rem !important;
+}
+
+h3 {
+  font-size: 1.15rem !important;
+}
+
+h4 {
+  font-size: 1rem !important;
+  font-weight: 600;
+}
+
+/* ===== SCREEN READER IMPROVEMENTS ===== */
+
+/* Visually hidden class for screen readers */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* Show on focus for keyboard navigation */
+.sr-only:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: inherit;
+  margin: inherit;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}
+
+/* ===== PRINT STYLES ===== */
+
+@media print {
+  .skip-link,
+  nav,
+  .no-print {
+    display: none;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+}
+
+/* ===== UTILITY CLASSES ===== */
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    border-color: #000 !important;
+  }
+
+  a {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Dark mode support (respects system preference) */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+  }
+
+  a {
+    color: #66b3ff;
+  }
+
+  a:visited {
+    color: #b19cd9;
+  }
+
+  th {
+    background-color: #2d5a8c;
+  }
+
+  td {
+    border-bottom-color: #444;
+  }
+
+  tr:nth-child(even) {
+    background-color: #262626;
+  }
+
+  tr:hover {
+    background-color: #333;
+  }
+
+  pre {
+    background-color: #2d2d2d;
+    border-color: #444;
+  }
+}
