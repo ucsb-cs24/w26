@@ -3,7 +3,7 @@ num: "lect09"
 sequence: 9
 desc: "Stacks"
 ready: false
-pre-reading: "7.1 - 7.4"
+pre-reading: "Savitch: 7.1 - 7.4"
 pdfurl: /lectures/CS24_Stacks.pdf
 ---
 # Code from lecture

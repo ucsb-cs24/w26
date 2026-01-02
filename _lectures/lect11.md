@@ -1,9 +1,9 @@
 ---
 num: "lect11"
 sequence: 11
-desc: "Binary Heaps and Priority Queues (QUIZ 3)"
+desc: "Binary Heaps and Priority Queues"
 ready: false
-pre-reading: "11.1 - 11.2"
+pre-reading: "Savitch: 11.1 - 11.2"
 pdfurl: /lectures/CS24_BinaryHeap.pdf
 ---
 

@@ -44,21 +44,21 @@ Use Ed for Q&A (link on Canvas). Post public questions when applicable; for codi
 - Make posts private if including significant code.
 
 ### Grading
-- **Quizzes**: 25% (5 quizzes during lecture, lowest dropped, second-lowest replaced by final exam score if higher)
+- **Quizzes**: 20% (4 quizzes during lecture, up to two lowerst quiz score replaced by final exam score if higher)
 - **Programming Assignments**: 25% (labs + larger projects)
 - **LeetCode Practice**: 10% (preparation for quizzes and mock interview)
 - **Mock Interview**: 10%
-- **Final Exam**: 30%
+- **Final Exam**: 35%
 
 Grading follows standard scale.
 
-### Quizzes (25%)
+### Quizzes (20%)
 Quizzes are given during lecture to help you stay on track and assess your understanding of recent material.
-- **Schedule**: Weeks 2, 4, 6, 7, 9 (5 total quizzes)
+- **Schedule**: Weeks 2 onward. See lecture schedule for quiz dates
 - **Format**: 15-20 minutes, given at the beginning or end of lecture
 - **Coverage**: Material from the previous 2-3 weeks
-- **Grading**: Each quiz is worth 5%. Your lowest quiz score is dropped. Additionally, if your final exam score is higher than your second-lowest quiz score, the final exam score will replace it.
-- **Make-ups**: No make-ups for missed quizzes; use your dropped score for absences or emergencies.
+- **Grading**: Each quiz is worth 5%. 
+- **Make-ups**: No make-ups for missed quizzes; use the provision of final exam replacing up to two lowest quiz scores
 - **Content**: Mix of conceptual questions, code reading, and short coding problems
 
 ### LeetCode Practice (10%)
@@ -102,11 +102,17 @@ Complete one 20-minute mock technical interview with a TA or ULA to demonstrate 
 You have **five late days** total, with a **maximum of three days** per assignment, no penalty within this limit. Beyond this, a 10% deduction applies per day (up to one week), after which no credit is given unless approved for extenuating circumstances.
 
 ### Pair Programming
-Some assignments allow optional pair programming (2–3 students coding together at one terminal, like a lab partnership). Benefits include:
+Some assignments allow optional pair programming (1-2 students coding together at one terminal, like a lab partnership). Benefits include:
 - Industry relevance and employer value
 - Improved collaboration skills (feedback from UCSB CS employers)
 - Enhanced learning and grades (research-backed, positive student feedback)
 - Watch: <http://bit.ly/pair-programming-video> (10 min)
+
+For CS24 in particular, **please read each lab carefully to learn how pair programming will work for that lab**. Some labs may require you to work by yourself, others may require you to work with a partner, and still others may allow you to do either. In addition, some labs may allow you to work with a prior partner, while others may not. 
+For all labs, you MUST
+* add your partner on Gradescope when submitting your work EACH TIME you submit your file(s). After uploading your file(s) on Gradescope, there is a “Group Members” link at the bottom (or “Add Group Member” under “Groups”) where you can select the partner you are working with. Whoever uploaded the submission must make sure your partner is part of your Group. Click on “Group Members” -> “Add Member” and select your partner from the list.
+* write both your and your partner's names and PERM numbers on each file submitted to Gradescope.
+
 
 ### Use of AI Tools
 AI tools (e.g., ChatGPT, GitHub Copilot, Grok) can support learning but must not replace your effort. Usage rules:

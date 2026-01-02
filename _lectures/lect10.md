@@ -3,7 +3,7 @@ num: "lect10"
 sequence: 10
 desc: "Queues, Breadth First Traversal, and Complete Binary Trees"
 ready: false
-pre-reading: "8.1 - 8.4"
+pre-reading: "Savitch: 8.1 - 8.4"
 pdfurl: /lectures/CS24_Queues.pdf
 ---
 

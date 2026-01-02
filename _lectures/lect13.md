@@ -3,7 +3,7 @@ num: "lect13"
 sequence: 13
 desc: "Graph representation with applications to Neural Networks"
 ready: false
-pre-reading: "15.1 - 15.2"
+pre-reading: "Savitch: 15.1 - 15.2"
 pdfurl: /lectures/CS24_Graph_Representation.pdf
 ---
 

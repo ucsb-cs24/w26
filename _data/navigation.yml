@@ -43,12 +43,8 @@ offering_links:
     url: /info/syllabus/
     description: "Syllabus" 
   - title: Ed
-    url: https://edstem.org/us/courses/76378/discussion
+    url: https://edstem.org/us/courses/90411/discussion
     description: "Q&A Forum"
-  - title: Staff
-    url: /info/staff/
-    description: "Staff Profiles"
-      
   - title: Github
     dropdown:
        - title: ucsb-cs24-w26

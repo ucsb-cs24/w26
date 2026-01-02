@@ -3,7 +3,7 @@ num: "lect17"
 sequence: 17
 desc: "Mergesort: Divide and Conquer"
 ready: false
-pre-reading: "13.1 - 13.2"
+pre-reading: "Savitch: 13.1 - 13.2"
 pdfurl: /lectures/CS24_MergeSort.pdf
 ---
 

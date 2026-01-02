@@ -3,7 +3,7 @@ num: "lect08"
 sequence: 8
 desc: "Space complexity, best/worst case analysis (QUIZ 2)"
 ready: false
-pre-reading: "1.2"
+pre-reading: "Savitch: 1.2"
 pdfurl: /lectures/CS24_Complexity_Analysis.pdf
 ---
 # Code from lecture

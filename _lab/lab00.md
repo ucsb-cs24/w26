@@ -231,32 +231,7 @@ Note that this assignmnent does not count toward your final grade. So, the point
 
 Congratulations on completing the workflow for CS24 programming assignments using the tools that we will be using in this class i.e. gradescope and github. 
 
-# Find a partner for lab02 (lab01 must be done solo)
 
-Please read the information below. Then, use the dedicated Ed thread called **Search for Teammates** to find a partner for the next lab. Refrain from creating new threads to avoid clutter on Ed. You can also try to find a partner by connecting with students in your section on Thursday.
-
-## About pair programming in the real world
-
-*Note: this is also in the syllabus!*
-
-Most of the programming work in this course will be done using a style of programming known as &quot;pair programming&quot;. This is where two people (in rare cases, three) work together at the same terminal to solve a programming problem.
-It is similar, in some ways, to having a &quot;lab partner&quot; in a Biology, Chemistry or Physics course.
-For the assignments where pair programming is mentioned, it is optional. But here's why we recommend it:
-* Pair programming is a real-world skill that is highly valued by employers.
-* Many companies use pair programming extensively, including several local area employers of UCSB CS graduates.
-* Companies that employ UCSB CS and CE grads tell us that our graduates have good technical skills but need better skills and working in pairs and groups to solve problems.
-* Incorporating  pair programming into our curriculum is part of our response to this &quot;real-world&quot; feedback.
-* Most students find it helpful and enjoyable—UCSB CS students from 2009-2010 that were surveyed about their pair programming experiences overwhelmingly reported positive results.
-* There is also evidence in the scientific literature that it improves student learning, and helps you get better grades.
-* To learn more about pair programming, watch the following video (it takes less than 10 minutes): [http://bit.ly/pair-programming-video](http://bit.ly/pair-programming-video)
-
-## About pair programming in CS24 
-
-For CS24 in particular, **please read each lab carefully to learn how pair programming will work for that lab**. Some labs may require you to work by yourself, others may require you to work with a partner, and still others may allow you to do either. In addition, some labs may allow you to work with a prior partner, while others may not. 
-
-For all labs, you MUST
-* add your partner on Gradescope when submitting your work EACH TIME you submit your file(s). After uploading your file(s) on Gradescope, there is a “Group Members” link at the bottom (or “Add Group Member” under “Groups”) where you can select the partner you are working with. Whoever uploaded the submission must make sure your partner is part of your Group. Click on “Group Members” -> “Add Member” and select your partner from the list.
-* write both your and your partner's names and PERM numbers on each file submitted to Gradescope.
 
 
 

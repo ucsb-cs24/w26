@@ -3,7 +3,7 @@ num: "lect06"
 sequence: 6
 desc: "Tree traversals"
 ready: false
-pre-reading: "10.4, 10.5"
+pre-reading: "Savitch: 10.4, 10.5"
 pdfurl: /lectures/CS24_BST_part2.pdf
 ---
 

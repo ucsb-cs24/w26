@@ -1,18 +1,22 @@
 ---
 num: "lect03"
 sequence: 3
-desc: "Abstract Data Types and operator overloading"
-pre-reading: " 2.1 - 2.5, 3.1"
+desc: "Running time analysis"
 ready: false
-pdfurl: /lectures/CS24_Lecture3.pdf
+pre-reading: "OP: 1.3, Dasgupta: 0.1 - 0.3"
+pdfurl: /lectures/CS24_Lecture2.pdf
+annotatedpdfurl: /lectures/CS24_Lecture2_ann.pdf
+annotatedready: false
 ---
 # Code from lecture
-
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
+# Lecture prereading
+* OP (Open data structures book), chapter 1.3: <https://opendatastructures.org/ods-cpp/1_3_Mathematical_Background.html>
+* DG (Algorithms by Das Gupta): chapter 0.1 - 0.3 <http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf >
 # Topics
-- Linked List as an Abstract Data Type: We'll review the Linked List data structure and contrast a custom implementation with std::list
-- Initialization routines for ADTs - parameterized constructors
-- We'll discuss the what, why, and how of operator overloading in C++
+* Discuss and motivate runtime analysis
+* Model of computation (constant time operations)
+* Definition of Big-O and Big-Omega and why each is useful
 
 

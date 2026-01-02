@@ -1,125 +1,373 @@
 ---
-layout: lab  
-num: lab01  
-ready: true  
-desc: "LeetCode 3-Sum + Empirical Runtime Analysis"  
+layout: lab
+num: lab01
+ready: true
+desc: "Implementing a linked list- OOP style"
 assigned: 2026-01-05 09:00:00.00-08:00
-due: 2026-01-09 23:59:00.00-08:00  
+due: 2026-01-16 23:59:00.00-08:00
 ---
 
-## Learning Goals  
-- Set up and use LeetCode for algorithmic practice  
-- Implement a brute-force solution to the 3-Sum problem  
-- Perform empirical analysis to measure and model program runtime  
-- Visualize and interpret runtime data using linear and log-log plots  
+## Collaboration policy
+This lab may be done solo
 
-## Collaboration Policy  
-This lab is an **individual assignment**. You must:  
-- Solve the LeetCode 3-Sum problem and perform the empirical analysis yourself, without assistance from AI tools or others.  
-- However, you **may use AI tools or online resources** to assist with writing code for timing measurements, file I/O, and plotting (but not for the 3-Sum solution itself).  
-- Cite any external resources (e.g., libraries, tutorials) used for these auxiliary tasks in your report.  
 
-## Part 1: Getting Started with LeetCode  
-To build algorithmic problem-solving skills, 10% of your final grade will come from completing a curated set of LeetCode problems over the next 9 weeks. These problems align with course topics and will help prepare you for exams, where some questions will be drawn from this set. If you haven't used github before, we recommend completing the optional (lab00) first before starting this assignment.
+# Goals for this lab
 
-### Steps to Set Up:  
-1. **Create an Account**:  
-   - Sign up at <https://leetcode.com/accounts/signup/>.  
-   - Use a username format: `DS_[YourInitials]_[RandomNumber]` (e.g., `DS_JD_1234`). Pick any number you like.  
-2. **Submit Your Profile**:  
-   - By **Monday, Week 2, 11:59 PM**, submit a Google Form with:  
-     - Your full name  
-     - Student ID  
-     - Direct link to your LeetCode profile (e.g., <https://leetcode.com/DS_JD_1234/>)  
-   - Google Form link: <https://forms.gle/vWx73VW5H2rdRQav9>  
-3. **Start Early**:  
-   - Set up your account in Week 1 and begin practicing. Late setups must be coordinated with your TA by Monday of Week 2.  
+By the time you have completed this lab, you should be able to
 
-**Tip**: LeetCode is low-stakes practice with high payoff—consistent effort will boost your exam performance!  
+* Explain the meaning of a "self-referential" data structure
+* Create, use, and manage memory for simple linked lists
+* Implement functions that process linked lists
 
-## Part 2: Solving the 3-Sum Problem  
-Your task is to solve the **3-Sum problem** on LeetCode using a brute-force approach and analyze its runtime empirically.  
 
-### Problem Details:  
-- LeetCode Problem: [3-Sum](https://leetcode.com/problems/3sum/)  
-- Goal: Given an integer array `nums`, return all unique triplets `[nums[i], nums[j], nums[k]]` where `i != j != k` and `nums[i] + nums[j] + nums[k] == 0`.  
-- Constraint: Use a **brute-force approach** (e.g., three nested loops) for this lab, even though more efficient solutions exist.  
+# Academic Honesty
+All work submitted for this lab should be your own. If you are using any hints from a previous offering of this course that was posted publicly by a CS24 instructor, you must cite your source.
 
-### Steps:  
-1. **Solve on LeetCode**:  
-   - Implement a brute-force solution in LeetCode’s editor.  
-   - Test and submit to ensure correctness.  
-2. **Local Implementation**:  
-   - Transfer your solution to a C++ program (`3sum_analysis.cpp`) on your local machine or CSIL.  
-   - Modify it to handle runtime measurements (see Part 3).  
+# Step by Step Instructions
 
-## Part 3: Empirical Runtime Analysis  
-Analyze how your brute-force 3-Sum solution’s runtime scales with input size.  
+## Step 1: Create a directory and get files
 
-### Tasks:  
-1. **Measure Runtime**:  
-   - In `3sum_analysis.cpp`, add code to:  
-     - Generate random input arrays of increasing sizes (e.g., `n = 100, 200, 400, 800, 1600`).  
-     - Time your 3-Sum function for each size using `chrono` (see sample code below).  
-     - Use at least 5 data points, up to `n = 8000`.  If `n = 8000` takes too long, adjust your max size (e.g., to 4000) and note this in your report.”
-     - Ensure inputs have at least one valid triplet (e.g., include `-a, -b, a+b` in the array).  
-   - Record times in milliseconds.  
 
-   **Sample Timing Code**:  
-   ```cpp
-   auto start = chrono::high_resolution_clock::now();
-   vector<vector<int>> result = threeSum(nums);
-   auto end = chrono::high_resolution_clock::now();
-   double time_ms = chrono::duration_cast<chrono::microseconds>(end - start).count() / 1000.0;
-   ```
+Follow the instructions from lab01 to set up your GitHub repo and get the starter code into your local repository.
 
-2. **Plot Runtime Data**:  
-   - **Linear Plot**: Plot runtime `T(n)` (ms) vs. input size (`n`).  Here, T(n) represents your program’s runtime in milliseconds for an input array of size n.
-   - **Log-Log Plot**: Plot `log2(T(n))` vs. `log2(n)`.  
-   - Use any tool (e.g., Python/Matplotlib, Excel) for plotting.  
+Below is the link for the starter code for this lab:
+<https://github.com/{{site.class_org.name}}/STARTER-{{page.num}}>
 
-3. **Derive an Empirical Model**:  
-   - Based on the log-log plot, fit a line to estimate the relationship `log2(T(n)) = m * log2(n) + b`.  
-   - Convert to a power-law form: `T(n) = k * n^m`, where `k = 2^b`.  
-   - Hint: Examine your brute-force 3-Sum solution. How many nested loops does it use? How does this relate to the exponent of `n` in the power-law formula?
 
-4. **Update Plots**:  
-   - Overlay your empirical model (predicted runtime) on both plots.  
+Once you have the starter code set up in your local repo, you should see a listing of several C++ files.
 
-5. **Analyze Results**:  
-   - In your report:  
-     - Do a Big-O analysis of your code and discuss how it relates to your emprical analysis
-     - Discuss differences between linear and log-log plots.  
-     - Your main takeaways and observations  
-       
-6. **Optional Challenge (10 Bonus Points)**:
-   - Implement an optimized 3-Sum solution (e.g., using sorting and two pointers) with a lower time complexity than your brute-force approach. Measure T(n) for the same input sizes, derive a new empirical model, and compare it to your brute-force results in your report.
+Typing the list (ls) command should show you the following files in your current directory:
 
-## Submission on Gradescope  
-Submit **one file**:  
-1. **`report.pdf`**: Include:
-   - Include a link to your github repo containing the brute-force 3-Sum solution (and the optional, extra credit, optimized 3-Sum solution)
-   - Linear plot (runtime vs. `n`) with model overlay  
-   - Log-log plot (`log2(runtime)` vs. `log2(n)`) with model overlay  
-   - Derivation of your empirical model (show calculations)  
-   - Observations (1-2 paragraphs)
-   - (If attempted) Optional challenge: Optimized solution description, new plots/models, and comparison to brute-force results
 
-**Note**: Plotting code is optional to submit; focus on the C++ logic and report quality.  
+```
+-bash-4.2$ ls
+intlist.cpp  intlist.h  Makefile  README.md  testlist.cpp  testrest.cpp
+-bash-4.2$  make all
+g++ -c -g testlist.cpp
+g++ -c -g intlist.cpp
+g++ -g -o testlist testlist.o intlist.o
+g++ -c -g testrest.cpp
+g++ -g -o testrest testrest.o intlist.o
+```
 
-## Grading Rubric (100 points)  
-- LeetCode setup (profile submitted): 10 points  
-- Correct brute-force 3-Sum solution: 20 points  
-- Runtime measurements (5+ data points): 20 points  
-- Plots (linear + log-log with model): 20 points  
-- Empirical model derivation: 15 points  
-- Observations and analysis: 15 points  
-- Optional challenge: 10 bonus
+We will discuss these files in Step 3. But first some practice.
 
-## Tips for Success  
-- Start early—debugging and plotting take time!  
-- Test small inputs first (`n ≤ 100`) to verify correctness.  
-- Use a consistent machine for timing (CSIL preferred).  
-- Reach out to TAs on Ed for clarification.
-- FAQ document: https://docs.google.com/document/d/1FLdL3pMy3bimSAG1hb44OOWpwNxSfo0UV6di6wnpqfw/edit?usp=sharing
+## Step 2: Practice using linked structures (Optional)
+
+You can go to the website, "www.cpp.sh", to get practice with linked structures. (Or any other online cpp shell)
+Type or copy/paste the simple program shown below (in bold) at the code area in cpp.sh (replacing the original sample code):
+
+```cpp
+struct Node {
+  int info;
+  Node *next;
+}
+```
+
+The structure, 'Node', you just created, incorporates a way for an object of its type to point to another object of the same type - it is a self-referential structure. The idea is to point the `next` field of a Node to another Node, or in other words, the `next` field of a Node stores the memory address of the next Node. In this way, we can build lists of Nodes, with each Node pointing to the next one. We also maintain a separate pointer that points to the first node in the list - often we call this pointer the "list" because it is the way we can access the list's elements.
+
+But before we do all that, let's just make a Node object, set its fields, and display its contents:
+
+```cpp
+#include <iostream>
+
+struct Node {int info; Node *next;};
+
+int main()
+{
+  Node item;
+  item.info = 9;
+  item.next = 0;
+  std::cout << "This node holds a number: " << item.info << "\n";
+}
+```
+
+Now click on the "Run" button below the code area.
+You will see the output at the bottom.
+
+```
+This node holds a number: 9
+```
+
+The Node named `item` stores a 9 as its information, and its next field (a.k.a. "link") does not point to anything (the address 0 is reserved to mean "no address" in C++, and it is also the value of the symbolic constant `NULL` that is defined in cstdlib. It can also be called nil). Usually, a node with a null link is used to indicate the end of a linked list.
+
+Now, let's use the structure of a Node to build an actual linked list storing three integers. First, we will declare a pointer named `list` that points to the first node in the list (or null if the list is empty). We initialize this pointer to a dynamically allocated first node, using the C++ keyword new (which returns a pointer/memory address). The remaining steps will create two more nodes, store values in each node, and properly link them all together as a list.
+
+```cpp
+#include <iostream>
+
+struct Node {int info; Node *next;};
+
+int main()
+{
+  Node* list = new Node;
+  list->info = 10;
+  list->next = new Node;
+  list->next->info = 20;
+  list->next->next = 0;
+
+  Node* temp = list;
+  list = new Node;
+  list->info = 5;
+  list->next = temp;
+
+  for (Node* n = list; n != 0; n = n->next) {
+    std::cout << "\nThis node is at address: " << n << std::endl;
+    std::cout << "It holds a number: " << n->info << std::endl;
+    std::cout << "Moving to the next node whose address is " << n->next << "..." << std::endl;
+  }
+}
+```
+
+Now click the "Run" button below the code area.
+You will see the output at the bottom.
+
+```
+This node is at address: 0x16359e0
+It holds a number: 5
+Moving to the next node whose address is 0x16359a0...
+
+This node is at address: 0x16359a0
+It holds a number: 10
+Moving to the next node whose address is 0x16359c0...
+
+This node is at address: 0x16359c0
+It holds a number: 20
+Moving to the next node whose address is 0...
+```
+
+The for loop continues as long as `n` is pointing to a node. At the end of each loop iteration, `n` is changed to point to the next node in the list. Study this loop, and be sure to understand it - discuss it with your partner to make sure you both understand it.
+
+As one more illustration, let's use a while loop to count the nodes in a list like this one. Make sure you understand the following loop too, in which the while loop condition is just the node pointer itself -- it becomes 0 at the end. ;-)
+
+```cpp
+#include <iostream>
+
+struct Node {int info; Node *next;};
+
+int main()
+{
+  Node* list = new Node;
+  list->info = 10;
+  list->next = new Node;
+  list->next->info = 20;
+  list->next->next = 0;
+
+  Node* temp = list;
+  list = new Node;
+  list->info = 5;
+  list->next = temp;
+
+  Node* n = list;
+  while (n) {
+    std::cout << "\nThis node is at address: " << n << std::endl;
+    std::cout << "It holds a number: " << n->info << std::endl;
+    std::cout << "Moving to the next node whose address is " << n->next << "..." << std::endl;
+
+    n = n->next;
+  }
+}
+```
+
+One big issue in the above program is memory leak.
+
+Since we dynamically allocated the memory for three nodes, we should free that memory before exiting the program and proceeding to Step 3. Also, according to convention, we set the list pointer to null - it is now an empty list:
+
+```cpp
+#include <iostream>
+
+struct Node {int info; Node *next;};
+
+int main()
+{
+  Node* list = new Node;
+  list->info = 10;
+  list->next = new Node;
+  list->next->info = 20;
+  list->next->next = 0;
+
+  delete list->next; // Why we free list->next firstly?
+  delete list;
+  list = 0; // Can we put this line before delete line?
+}
+```
+
+## Step 3: Learn how to encapsulate list nodes
+
+Now that you have a feel for list nodes, you should know that such structures are not usually manipulated directly by application programs - not in C++ anyway (although it is common in C programming). Instead, applications normally use objects of a List class, and the class itself is the only part of the program that accesses list nodes.
+
+In the rest of this lab, you will help build such a list class. The class definition is stored in `intlist.h` - please study it to know its parts:
+
+The public declarations show what a client program can do with an `IntList` object. Notice, however, that the list node structure definition is in the private area. Clients can't directly use or even refer to such nodes, but all that clients should care about are the values stored in these nodes anyway! Also, notice that every list object will have one node pointer that points to the first node in the list or at 0 if the list is empty.
+Now, look at `intlist.cpp`. The functions that you need to implement are marked in that file. Some of the methods of the class are implemented at the bottom of the file - do not change what is done.
+
+An application file would create `IntList` objects and use them to solve problems. For this lab, we have two application files, both of which are testing programs - `testlist.cpp` and `testrest.cpp`. First, look `testlist.cpp`. Two `IntList` objects are created; then, numbers read from the command line are appended to one of the lists; and finally, the methods are tested for each list.
+
+You can use the provided `Makefile` to help you complile the program.
+
+## Step 4: Implement linked list functions
+
+
+You should be able to run the program now (assuming you compiled it in Step 3) - it requires you to enter a starter list of integers on the command line, which means the program will throw an error if we don't provide the list of input integers when running the program:
+
+```
+-bash-4.2$ ./testlist
+error: need at least one int arg on command line
+usage: ./testlist int [int ...]
+```
+
+Here is the proper usage.
+
+```
+./testlist 5 7 9 11
+List 1:
+zsh: segmentation fault  ./testlist 5 7 9 11
+```
+Make the minimum change to intlist.cpp so that you don't get a segfault and instead get the following output.
+
+```
+% ./testlist 5 7 9 11
+List 1:
+   []
+   count: 0
+   sum: 0
+   contains 5 ? no
+   contains 7 ? no
+   contains 11 ? no
+   contains 0 ? no
+   max: 0
+   average: 0.000
+   List after push_front(sum):
+   []
+Empty list 2:
+   []
+   count: 0
+   sum: 0
+   contains 1 ? no
+   max: 0
+   average: 0.000
+   List 2 after push_front(3), then push_front(1):
+   []
+```
+
+Use an editor (e.g., emacs, vim, or VS Code) to make the following changes to `intlist.cpp` - do not change any of the other files.
+
+* Fix the comment at the top to show your name and the date.
+* Write the other methods for the IntList class. All implementations should be in intlist.cpp.
+* Save, and then test each of your member function implementationx - compile and execute `testlist` again. Think about the order in which you should implement these functions.
+* Push your code to github using the `git add .`, `git commit`, and `git push` commands
+* Implement and test one at a time. Don't implement the copy constructor, destructor, and assignment operator yet.
+* Push your code to github often.
+
+Here are correct results for the same sample data as above:
+
+```
+./testlist 5 7 9 11
+List 1:
+   [5 7 9 11]
+   count: 4
+   sum: 32
+   contains 5 ? yes
+   contains 7 ? yes
+   contains 11 ? yes
+   contains 32 ? no
+   max: 11
+   average: 8.000
+   List after push_front(sum):
+   [32 5 7 9 11]
+Empty list 2:
+   []
+   count: 0
+   sum: 0
+   contains 1 ? no
+   max: 0
+   average: 0.000
+   List 2 after push_front(3), then push_front(1):
+   [1 3]
+```
+
+Ask yourself: With just the automatic copy constructor and assignment operator, won't copies be shallow?
+
+You will fix this problem by overloading the copy constructor and assignment operator. You should also implement the destructor. However, before you begin, examine `testrest.cpp`. This file tests the functions your are about to implement.
+
+Run the test program with argument 1 (to test your copy constructor) before implementing the above functions.
+
+```
+$ ./testrest 1
+Segmentation fault (core dumped)
+```
+Now run the program with the same argument in `gdb` and try to figure out exactly why it crashed.
+
+* Implement the copy constructor in `intlist.cpp`. Compile with `make` and run <code>$ ./testrest 1</code>. Repeat this process until the test passes. However, its not enough to just pass the test. This is because when you are writing programs that work with dynamic data (on the heap), your program can have memory leaks that are not captured by unit tests. To check for leaks, you should run your program in `valgrind` as follows:
+
+```
+$ valgrind --leak-check=full ./testrest 1
+==5414== Memcheck, a memory error detector
+==5414== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.
+==5414== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info
+==5414== Command: ./testrest 1
+==5414==
+PASSED copy constructor tests
+==5414==
+==5414== HEAP SUMMARY:
+==5414==     in use at exit: 0 bytes in 0 blocks
+==5414==   total heap usage: 17 allocs, 17 frees, 73,968 bytes allocated
+==5414==
+==5414== All heap blocks were freed -- no leaks are possible
+==5414==
+==5414== For counts of detected and suppressed errors, rerun with: -v
+==5414== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
+```
+
+The error summary should show 0 errors as shown above. If you have memory leaks, `valgrind` will let you know.
+
+
+* Implement the destructor, compile and run <code>$ ./testrest 2</code>.
+You should see the following message:
+
+```
+$ ./testrest 2
+Testing destructor, run in valgrind to check for leaks
+```
+Now run it in `valgrind` to make sure you don't have any memory leaks
+
+* Finally implement the overloaded assignment operator in `intlist.cpp`. To test it run <code>$ ./testrest 3</code>. If it doesn't crash, run it in `valgrind` to check for memory leaks
+
+## Step 5: Submit intlist.cpp and intlist.h (if you have modified it).
+
+Log into your account on https://www.gradescope.com/ and navigate to our course site. Select this assignment. Then click on the "Submit" button on the bottom right corner to make a submission. You will be given the option of uploading files from your local machine or submitting the code that is in a github repo. Select the second option and select your github repo for this assignment. You should receive 100/100 for a completely correct program.
+
+
+Do beware that all parts must be working to earn any points at all from the Gradescope system.
+
+
+## Evaluation and Grading
+
+Each student must accomplish the following to earn full credit for this lab:
+
+* Your code has your name(s) in a comment at the top, it compiles and executes properly, and has been submitted to the Gradescope system.
+* Your code should correctly compile and run locally on CSIL
+* If worked with a partner, add the partner in Gradescope and make a single submission.
+* Both partners should check that they have the same score on Gradescope. The CS24 staff are not responsible for incorrect submissions.
+
+# Find a partner for lab02
+
+Please read the information below. Then, use the dedicated Ed thread called **Search for Teammates** to find a partner for the next lab. Refrain from creating new threads to avoid clutter on Ed. You can also try to find a partner by connecting with students in your section on Thursday.
+
+## About pair programming in the real world
+
+*Note: this is also in the syllabus!*
+
+Most of the programming work in this course will be done using a style of programming known as &quot;pair programming&quot;. This is where two people (in rare cases, three) work together at the same terminal to solve a programming problem.
+It is similar, in some ways, to having a &quot;lab partner&quot; in a Biology, Chemistry or Physics course.
+For the assignments where pair programming is mentioned, it is optional. But here's why we recommend it:
+* Pair programming is a real-world skill that is highly valued by employers.
+* Many companies use pair programming extensively, including several local area employers of UCSB CS graduates.
+* Companies that employ UCSB CS and CE grads tell us that our graduates have good technical skills but need better skills and working in pairs and groups to solve problems.
+* Incorporating  pair programming into our curriculum is part of our response to this &quot;real-world&quot; feedback.
+* Most students find it helpful and enjoyable—UCSB CS students from 2009-2010 that were surveyed about their pair programming experiences overwhelmingly reported positive results.
+* There is also evidence in the scientific literature that it improves student learning, and helps you get better grades.
+* To learn more about pair programming, watch the following video (it takes less than 10 minutes): [http://bit.ly/pair-programming-video](http://bit.ly/pair-programming-video)
+
+
 

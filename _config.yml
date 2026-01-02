@@ -27,10 +27,10 @@ qtr: "W26"
 quarter: "Winter 2026"
 lecture_times: "MW 11:00a - 12:15p"
 lecture_location: "BUCHN 1910"
-office_hours: "TBD"
-lab_times: "TBD"
-tas: "TBD"
-ulas: "TBD"
+office_hours: "WR: 1p - 2p, HFH 2119"
+lab_times: "R: 11a - noon , noon - 1p, 1p - 2p , 2p - 3p, 3p - 4p" 
+tas: "Sarah Canto Hyatt, Yupeng Su, Zhuoer Shen, Towhidul Islam"
+ulas: "Nikhil Kapasi, Olivia Chen, Kyle Manternach, Ritam Saha,  Samuel Zhang, Jackson Cao"
 class_org:
    name: ucsb-cs24-w26
    url: https://github.com/ucsb-cs24-w26

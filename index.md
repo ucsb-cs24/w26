@@ -15,7 +15,12 @@ Welcome to CS24! The goal of this class is to solve problems efficiently using d
 
 **Instructor:** {{site.instructor}} &nbsp; | &nbsp; **Office Hours:** {{site.office_hours}}
 
-**Lectures:** {{site.lecture_times}}, {{site.lecture_location}} &nbsp; | &nbsp; **Sections:** {{site.lab_times}} in Phelps 3525 &nbsp; ([Section Slides](https://drive.google.com/drive/folders/1GjEQMKPtB0NsbAab6D2mLV3r9eoc_Rbf?usp=sharing))
+**Lectures:** {{site.lecture_times}}, {{site.lecture_location}} &nbsp; | &nbsp; **Sections:** {{site.lab_times}} in Phelps 3525 &nbsp; 
+
+
+**Teaching Assistants (TAs)** {{site.tas}}
+
+**Learning Assistants (LAs):** {{site.ulas}}
 
 ---
 

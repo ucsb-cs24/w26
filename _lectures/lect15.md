@@ -1,9 +1,9 @@
 ---
 num: "lect15"
 sequence: 15
-desc: "Graph Algorithms and Applications (QUIZ 5)"
+desc: "Graph Algorithms and Applications"
 ready: false
-pre-reading: "15.3- 15.4"
+pre-reading: "Savitch: 15.3 - 15.4"
 pdfurl: /lectures/CS24_PQ_GraphSearchComplexity.pdf
 ---
 

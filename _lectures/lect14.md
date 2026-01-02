@@ -3,7 +3,7 @@ num: "lect14"
 sequence: 14
 desc: "Graph search: Breadth and Depth first traversal"
 ready: false
-pre-reading: "15.3- 15.4"
+pre-reading: "Savitch: 15.3 - 15.4"
 pdfurl: /lectures/CS24_Graph_Search.pdf
 ---
 

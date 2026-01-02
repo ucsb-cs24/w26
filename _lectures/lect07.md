@@ -3,7 +3,7 @@ num: "lect07"
 sequence: 7
 desc: "Iterators"
 ready: false
-pre-reading: "3.1 - 3.3"
+pre-reading: "Savitch: 3.1 - 3.3"
 pdfurl: /lectures/CS24_BST_iterators.pdf
 ---
 

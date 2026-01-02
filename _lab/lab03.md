@@ -1,10 +1,10 @@
 ---
 layout: lab
 num: lab03
-ready: true
+ready: false
 desc: "Binary Search Tree"
-assigned: 2026-01-21 09:00:00.00-08:00
-due: 2026-01-23 23:59:00.00-08:00
+assigned: 2026-01-23 09:00:00.00-08:00
+due: 2026-01-30 23:59:00.00-08:00
 ---
 
 # Goals for this lab

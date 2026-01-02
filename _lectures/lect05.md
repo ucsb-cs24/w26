@@ -3,7 +3,7 @@ num: "lect05"
 sequence: 5
 desc: "Efficient search with Binary Search Trees"
 ready: false
-pre-reading: "12.1, 10.1 - 10.3"
+pre-reading: "Savitch: 12.1, 10.1 - 10.3"
 pdfurl: /lectures/CS24_BST_part1.pdf
 ---
 
