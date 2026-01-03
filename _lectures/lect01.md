@@ -3,8 +3,9 @@ num: "lect01"
 sequence: 1
 desc: "CS16 Review: Abstract Data Types (Linked List)"
 pre-reading: "Savitch: 2.1 - 2.5, 3.1"
-ready: false
-pdfurl: /lectures/CS24_Lecture3.pdf
+ready: true
+pdfurl: /lectures/CS24_Lecture1.pdf
+handouturl: https://docs.google.com/document/d/1HaLP88rtE3i6-YwHpOntyRExiFMhbHGJx9on6CHw3Ks/edit?usp=sharing
 ---
 # Code from lecture
 
