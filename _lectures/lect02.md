@@ -4,7 +4,7 @@ sequence: 2
 desc: "C++ Operator Overloading and Rule of three"
 ready: false
 pre-reading: "Savitch: 4.3 - 4.4, 5.1, 5.3"
-pdfurl: /lectures/BigThree.pdf
+pdfurl: /lectures/CS24_Lecture2.pdf
 ---
 
 # Code from lecture
@@ -13,7 +13,7 @@ pdfurl: /lectures/BigThree.pdf
 
 # Handout
 
-Big Four handout: <https://docs.google.com/document/d/11b57oL32Ph57xF7eKFXFcoYKayNim4X3HK6VuOprce8/edit?usp=sharing>
+handouturl: https://docs.google.com/document/d/1sljCnbOx8txR99VrWBfCDQ9QMC7QGPegnFXx5Y1DPUk/edit?tab=t.0
 
 # Topics
 Recursion,x dynamic memory errors, rule of three!
