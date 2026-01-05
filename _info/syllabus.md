@@ -36,7 +36,7 @@ By the end of this course, students will be able to:
 
 **Support:** Instructor office hours (see website), TA/ULA drop-in hours (Phelps 3525, times on course calendar).
 
-**In-Class Participation:** Join [iClicker Cloud](https://join.iclicker.com/AXZR). Participation is ungraded but encouraged.
+**In-Class Participation:** Join [iClicker Cloud](https://join.iclicker.com/ZHLY). Participation is ungraded but encouraged.
 
 ### Discussion Forum: Ed
 Use Ed for Q&A (link on Canvas). Post public questions when applicable; for coding issues:
@@ -73,6 +73,7 @@ Complete 10 medium LeetCode problems from the assigned list to practice algorith
      - **Data Structures**: Which data structures did you use and why?
      - **Complexity**: What is the time complexity and space complexity of your solution? Briefly explain why.
      - **Challenges**: What was the most difficult part? If your solution didn't pass all test cases, what cases failed and why do you think that happened?
+  5. In general AI may not be used for generating the code or solution to Leet Code Problems.
 - **Task**: Complete at least 2 problems from each of the 5 problem sets (lp01-lp05) for a total of 10 problems by Friday, Week 9, 11:59 PM.
 - **Grading**: Each problem is worth 1%, awarded as follows:
   - **Full credit (1%)**: Solution passes all test cases + thoughtful reflection demonstrating understanding
@@ -99,7 +100,7 @@ Complete one 20-minute mock technical interview with a TA or ULA to demonstrate 
 - See [detailed guide and grading rubric](/w26/info/mock_interview/) for complete information
 
 ### Late Policy
-You have **five late days** total, with a **maximum of three days** per assignment, no penalty within this limit. Beyond this, a 10% deduction applies per day (up to one week), after which no credit is given unless approved for extenuating circumstances.
+You have **five late days** total, with a **maximum of three days** per assignment, no penalty within this limit. Beyond this, instructor approval is needed and extensions may be given only for extenuating circumstances with documentation.
 
 ### Pair Programming
 Some assignments allow optional pair programming (1-2 students coding together at one terminal, like a lab partnership). Benefits include:
@@ -121,10 +122,10 @@ AI tools (e.g., ChatGPT, GitHub Copilot, Grok) can support learning but must not
   - Clarify concepts (e.g., “Explain binary search trees”)
   - Get code feedback (e.g., “Improve my queue implementation”)
   - Explore design trade-offs (e.g., “Hash table vs. array pros/cons”)
-- **Prohibited Use**: Generating full solutions, large code segments, or completing assignments (e.g., “Write a BST in C++”) is academic dishonesty, even when permitted. Debugging help is okay; rewriting your work is not.
-- **Documentation**: Submit a log (e.g., text file or screenshots) of AI interactions for permitted assignments, showing constructive use and your own work. Earn up to a 5% assignment bonus on assignments where AI tools are permitted for thoughtful engagement (instructor’s discretion).
+  - Use of AI for code completion on AI-permitted assignments, but you must explore original approach and be able to explain every single line of code.
+- **Prohibited Use**: Generating full solutions, large code segments, or completing assignments (e.g., “Write a BST in C++”) is academic dishonesty, even when permitted. Debugging help is okay; rewriting your work is not. 
 - **Tool Choice**: Any AI tool is allowed; identify it in your log.
-- **Consequences**: Unauthorized use, missing logs, or misuse equals academic dishonesty (see below).
+- **Consequences**: Unauthorized use or misuse equals academic dishonesty (see below).
 
 ### Academic Integrity
 Check each assignment’s collaboration policy—some are individual, others allow pair programming. Review UCSB’s Academic Integrity guidelines: <http://studentconduct.sa.ucsb.edu/academic-integrity>. Violations (e.g., cheating, plagiarism, unauthorized AI use) result in:
@@ -143,8 +144,8 @@ Key rules:
 ### Final Exam
 The final exam is **comprehensive** and covers all course material.
 - **Date**: Wednesday, March 18, 2026
-- **Time**: 12:00 PM - 3:00 PM
-- **Location**: TBD (will be announced)
+- **Time**: Noon - 3:00 PM
+- **Location**: {{site.lecture_location}} (Same as lecture hall)
 
 **Exam Makeups**: Makeups are granted only for unavoidable emergencies (e.g., major illness), not scheduling conflicts. Check the exam date early and plan accordingly!
 
@@ -155,5 +156,8 @@ UCSB accommodates students with disabilities via DSP (2120 Student Resource Buil
 Policies are accurate but may change at the instructor’s discretion within UC guidelines.
 
 [Back to Syllabus](#syllabus){: data-ajax="false"}
+
+
+
 
 

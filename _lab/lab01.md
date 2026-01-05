@@ -10,6 +10,8 @@ due: 2026-01-16 23:59:00.00-08:00
 ## Collaboration policy
 This lab may be done solo
 
+## AI-policy
+Constructive use of AI tools as described in the syllabus is permitted for this assignment.
 
 # Goals for this lab
 
