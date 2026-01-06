@@ -1,11 +1,11 @@
 ---
 num: "final"
-lecture_date: 2026-03-18
+lecture_date: 2026-03-19
 desc: "Final Exam Instructions and Study Tips"
 ready: false
 ---
 ## Final Exam Logistics
-- Time and location: noon - 3p on Wednesday 2026-03-18
+- Time and location: noon - 3p on Thursday 2026-03-19
 - Seating will be assigned, link will appear here and on Ed
 - Closed book closed notes.
 
