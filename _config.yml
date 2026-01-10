@@ -43,6 +43,7 @@ cal_dates: >
   [
   {"label":"First day of classes", "date":"2026-01-05" },
   {"label":"Drop deadline (no W grade)","date":"2026-01-23" },
+  {"label":"Martin Luther King Day - No lecture", "date":"2026-01-19" },
   {"label":"Presidents Day - No lecture", "date":"2026-02-16" },
   {"label":"W26 Instruction Ends", "date":"2026-03-13" },
   {"label":"Final Exam", "date":"2026-03-18" },

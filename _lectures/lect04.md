@@ -1,23 +1,23 @@
 ---
 num: "lect04"
 sequence: 4
-desc: "Running time analysis continued (QUIZ 1)"
+desc: "Efficient search with Binary Search Trees(QUIZ 1)"
 ready: false
-pre-reading: "OP: 1.3, Dasgupta: 0.1 - 0.3"
-pdfurl: /lectures/CS24_Lecture2.pdf
-annotatedpdfurl: /lectures/CS24_Lecture2_ann.pdf
+pre-reading: "Savitch: 12.1, 10.1 - 10.3"
+pdfurl: /lectures/CS24_BST_part1.pdf
 annotatedready: false
 ---
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-# Lecture prereading
-* OP (Open data structures book), chapter 1.3: <https://opendatastructures.org/ods-cpp/1_3_Mathematical_Background.html>
-* DG (Algorithms by Das Gupta): chapter 0.1 - 0.3 <http://algorithmics.lsi.upc.edu/docs/Dasgupta-Papadimitriou-Vazirani.pdf >
+
+Handout: <https://drive.google.com/file/d/1Ja0vfrdtBSGI4bnUBknswWZdjLr5StP1/view?usp=sharing> 
 
 # Topics
-* Continuation of runtime analysis
-* Practice problems and examples
+* Efficient search using binary search
+* Binary trees
+* Binary search trees (BST) - search tree property and supported operations (search, insert, min, max)
+* Visualizing BST operations: <https://visualgo.net/en/bst>
 * Quiz 1
 
 
