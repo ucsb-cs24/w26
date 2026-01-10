@@ -5,6 +5,8 @@ desc: "C++ Operator Overloading and Rule of three"
 ready: true
 pre-reading: "Savitch: 4.3 - 4.4, 5.1, 5.3"
 pdfurl: /lectures/CS24_Lecture2.pdf
+annotatedready: true
+annotatedpdfurl: /lectures/CS24_Lecture2_ann.pdf
 handouturl: https://docs.google.com/document/d/1sljCnbOx8txR99VrWBfCDQ9QMC7QGPegnFXx5Y1DPUk/edit?tab=t.0
 ---
 
