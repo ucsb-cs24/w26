@@ -5,7 +5,8 @@ desc: "Efficient search with Binary Search Trees(QUIZ 1)"
 ready: true
 pre-reading: "Savitch: 12.1, 10.1 - 10.3"
 pdfurl: /lectures/CS24_BST_part1.pdf
-annotatedready: false
+annotatedready: true
+annotatedpdfurl: /lectures/CS24_BST_part1_ann.pdf
 ---
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
