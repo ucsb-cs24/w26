@@ -1,9 +1,9 @@
 ---
 layout: lab
 num: lab03
-ready: false
+ready: true
 desc: "Binary Search Tree"
-assigned: 2026-01-23 09:00:00.00-08:00
+assigned: 2026-01-14 09:00:00.00-08:00
 due: 2026-01-30 23:59:00.00-08:00
 ---
 
@@ -17,6 +17,9 @@ By the time you have completed this lab, you should be able to
 
 ## Collaboration policy
 This lab must be done solo
+
+## AI-policy
+Constructive use of AI tools as described in the syllabus is permitted for this assignment.
 
 ## Academic Integrity
 All work submitted for this lab should be your own. If you are using any hints from a previous offering of this course that was posted publicly by a CS24 instructor, you must cite your source.
