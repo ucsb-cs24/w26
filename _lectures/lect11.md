@@ -1,22 +1,19 @@
 ---
 num: "lect11"
 sequence: 11
-desc: "Binary Heaps and Priority Queues"
+desc: "Hashtables (QUIZ 3)"
 ready: false
-pre-reading: "Savitch: 11.1 - 11.2"
-pdfurl: /lectures/CS24_BinaryHeap.pdf
+pdfurl: /lectures/CS24_Hashtables.pdf
+pre-reading: "Prof. Suri's CS 130A handout"
 ---
 
+# Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-Link to inclass handout <https://bit.ly/CS24-binaryheap>
-Make a copy and work to complete inclass activities
-
-## Topics
-* Binary Heap data structure and its applications
-* Implementing a binary heap 
-* Application of priority_queue (ADT - max heap)
-
-
-
+Professor Subhash Suri's CS 130A handout on hashtables pp. 1- 8: <https://sites.cs.ucsb.edu/~suri/cs130a/Hashing.pdf>
+# Topics
+* Practical significance of hashtables
+* Conceptual understanding and design considerations
+* Hashtables and hashmaps in practice
+* Applications of unordered_set and underdered_map to coding problems
 

@@ -1,23 +1,17 @@
 ---
 num: "lect07"
 sequence: 7
-desc: "Iterators"
+desc: "Space complexity, best/worst case analysis (QUIZ 2)"
 ready: false
-pre-reading: "Savitch: 3.1 - 3.3"
-pdfurl: /lectures/CS24_BST_iterators.pdf
+pre-reading: "Savitch: 1.2"
+pdfurl: /lectures/CS24_Complexity_Analysis.pdf
 ---
-
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-
+Lecture handout: <https://docs.google.com/document/d/1LCYoeDyQSKzUBoYgfZPpSz3z9kvBjX7HHj7AB9Ekt1o/edit?usp=sharing>
 # Topics
-* Iterators: Abstraction for iterating through data structures
-* Implement an iterator for the custom BST class and solve related problems
-
-Link to handout <https://docs.google.com/document/d/1_ho9TbXWU7d4MGrcsihm02BfMNyFKzitxiRW-v65G2g/edit?usp=sharing>
-Handout is also included in the pdf of the slides.
-
-Related leetcode problem: <https://leetcode.com/problems/binary-search-tree-iterator/description/?envType=problem-list-v2&envId=iterator>
-
-
+* Definition of balanced BST
+* Analysis of code that involves std::set and iterators
+* Best case and worst case analysis of BST operations, amortized analysis via aggregation. 
+* Define space complexity of an algorithm

@@ -1,12 +1,18 @@
 ---
 num: "lect05"
-sequence: 5
-desc: "No lecture - Martin Luther King Day"
-ready: false
-pre-reading: ""
-
+sequence: 6
+desc: "BST operations and Tree traversals"
+ready: true
+pre-reading: "Savitch: 10.4, 10.5"
+pdfurl: /lectures/CS24_BST_part2.pdf
+handouturl: https://docs.google.com/document/d/1LZnQXepO3PHp-ncyidrDgoHqrwUZrBzatFCDLlT_cxo/edit?tab=t.0#heading=h.74bek3gewyr8
 ---
 
+# Code from lecture
+[{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-
-
+# Topics
+* Coming up with algorithms by tracing through examples: BST insert
+* Tree traversals: inorder, preorder, postorder, and why each is useful
+* Outline of successor and delete operations
+* Visualizing BST operations: <https://visualgo.net/en/bst>

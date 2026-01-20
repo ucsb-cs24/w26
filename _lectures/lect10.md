@@ -1,21 +1,21 @@
 ---
 num: "lect10"
 sequence: 10
-desc: "Queues, Breadth First Traversal, and Complete Binary Trees"
+desc: "Binary Heaps and Priority Queues"
 ready: false
-pre-reading: "Savitch: 8.1 - 8.4"
-pdfurl: /lectures/CS24_Queues.pdf
+pre-reading: "Savitch: 11.1 - 11.2"
+pdfurl: /lectures/CS24_BinaryHeap.pdf
 ---
 
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-## Handout
-Link to handout: <https://bit.ly/CS24-Queue>
+Link to inclass handout <https://bit.ly/CS24-binaryheap>
+Make a copy and work to complete inclass activities
 
 ## Topics
-* Queues with applications to Breadth First Traversal
-* Representing Complete Binary Trees as vectors 
-* Inserting elements and traversing a complete binary tree
+* Binary Heap data structure and its applications
+* Implementing a binary heap 
+* Application of priority_queue (ADT - max heap)
 
 
 

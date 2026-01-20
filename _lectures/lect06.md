@@ -1,16 +1,23 @@
 ---
 num: "lect06"
-sequence: 6
-desc: "Tree traversals"
+sequence: 7
+desc: "Iterators"
 ready: false
-pre-reading: "Savitch: 10.4, 10.5"
-pdfurl: /lectures/CS24_BST_part2.pdf
+pre-reading: "Savitch: 3.1 - 3.3"
+pdfurl: /lectures/CS24_BST_iterators.pdf
 ---
 
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
+
 # Topics
-* Tree traversals: inorder, preorder, postorder
-* Solve problems involving BSTs and recursions
-* Visualizing BST operations: <https://visualgo.net/en/bst>
+* Iterators: Abstraction for iterating through data structures
+* Implement an iterator for the custom BST class and solve related problems
+
+Link to handout <https://docs.google.com/document/d/1_ho9TbXWU7d4MGrcsihm02BfMNyFKzitxiRW-v65G2g/edit?usp=sharing>
+Handout is also included in the pdf of the slides.
+
+Related leetcode problem: <https://leetcode.com/problems/binary-search-tree-iterator/description/?envType=problem-list-v2&envId=iterator>
+
+

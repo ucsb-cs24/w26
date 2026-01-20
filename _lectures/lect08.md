@@ -1,17 +1,20 @@
 ---
 num: "lect08"
 sequence: 8
-desc: "Space complexity, best/worst case analysis (QUIZ 2)"
+desc: "Stacks"
 ready: false
-pre-reading: "Savitch: 1.2"
-pdfurl: /lectures/CS24_Complexity_Analysis.pdf
+pre-reading: "Savitch: 7.1 - 7.4"
+pdfurl: /lectures/CS24_Stacks.pdf
 ---
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-Lecture handout: <https://docs.google.com/document/d/1LCYoeDyQSKzUBoYgfZPpSz3z9kvBjX7HHj7AB9Ekt1o/edit?usp=sharing>
+
+## Handout: 
+Link to handout on stacks: <https://docs.google.com/document/d/1sgFUEI7vVeZPio05xBYn3ctq_asb4dV0w_epMX6v6yI/edit?tab=t.0>
+
 # Topics
-* Definition of balanced BST
-* Analysis of code that involves std::set and iterators
-* Best case and worst case analysis of BST operations, amortized analysis via aggregation. 
-* Define space complexity of an algorithm
+* Stack - operations, implementation and why its useful
+* We'll solve this leetcode problem: https://leetcode.com/problems/daily-temperatures/
+
+

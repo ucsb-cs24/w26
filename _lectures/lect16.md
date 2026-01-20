@@ -1,26 +1,25 @@
 ---
 num: "lect16"
 sequence: 16
-desc: "(PA03) DFS based backpropagation (QUIZ 4)"
+desc: "Mergesort: Divide and Conquer"
 ready: false
-pre-reading: " Required videos in pa03 tutorial"
-pdfurl: /lectures/CS24-NNBackprop.pdf
+pre-reading: "Savitch: 13.1 - 13.2"
+pdfurl: /lectures/CS24_MergeSort.pdf
 ---
 
 # Code from lecture
-We will review PA03 starter code: <https://github.com/ucsb-cs24-s25/STARTER-pa03/blob/main/NeuralNetwork.cpp>
+[{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-
-# Class handout
-Link to handout: <https://bit.ly/NN-DFS-Backprop>
-
-# Preclass videos to watch
-* StatQuest - Neural Network Basics (great for understanding the prediction algorithm): <https://youtu.be/CqOfi41LfDw?si=8waS2U01uMWcpH2i>
-* StatQuest - Back Propagation (great for understanding the contribute algorithm): <https://youtu.be/IN2XmBhILt4?si=bnDft-3T4DQ2iO9X>
-* 3Blue1Brown - <https://youtu.be/aircAruvnKk?si=KZt2AsbD7URc58-L>
+# Handout
+* Link to practice handout: <https://bit.ly/Divide-and-Conquer-Practice>
+* Link to leetcode medium problem: <https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/>
 
 # Topics
-* Understand the dataflow to implement a DFS-based backpropagation algorithm for Pa03 (needed to implement the recursive contribute function in PA03)
+* Divide and Conquer Algorithms
+ - Subdivide a larger problem into smaller problems
+ - Solve each smaller part
+ - Combine solutions of smaller sub problems back into the larger problem
 
-
+* Mergesort as an example of efficient sorting algo that uses the divide and conquer approach and runs in O(n log n)
+* Practice by solving leetcode problem
 

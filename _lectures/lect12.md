@@ -1,19 +1,23 @@
 ---
 num: "lect12"
 sequence: 12
-desc: "Hashtables (QUIZ 3)"
+desc: "Graph representation with applications to Neural Networks"
 ready: false
-pdfurl: /lectures/CS24_Hashtables.pdf
-pre-reading: "Prof. Suri's CS 130A handout"
+pre-reading: "Savitch: 15.1 - 15.2"
+pdfurl: /lectures/CS24_Graph_Representation.pdf
 ---
 
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-Professor Subhash Suri's CS 130A handout on hashtables pp. 1- 8: <https://sites.cs.ucsb.edu/~suri/cs130a/Hashing.pdf>
+Watch the first 5 minutes of this intro video to Neural Networks: <https://youtu.be/aircAruvnKk?feature=shared>
+
 # Topics
-* Practical significance of hashtables
-* Conceptual understanding and design considerations
-* Hashtables and hashmaps in practice
-* Applications of unordered_set and underdered_map to coding problems
+* Graph: terminology and application to modeling neural networks
+* Representation: adjacency list 
+* Connections to implementing a neural network (topic for pa03)
+* Visualizing how a neural net is stored in memory and supporting data structures
+* Designing the Graph class to allow building the graph iteratively by calling functions to add nodes and edges.
+* PA03 starter code for in class activity: <https://github.com/ucsb-cs24-s25/STARTER-pa03>
+
 
