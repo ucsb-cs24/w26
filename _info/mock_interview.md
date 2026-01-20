@@ -8,7 +8,7 @@ ready: true
 
 ## Overview
 
-Mock interviews are worth **10% of your course grade** and provide an opportunity to practice technical problem-solving and communication skills in a supportive environment. You will complete one 20-minute mock interview with a TA or ULA during Weeks 5-10.
+Mock interviews are worth **10% of your course grade** and provide an opportunity to practice technical problem-solving and communication skills in a supportive environment. You will complete one 20-minute mock interview with a TA or ULA during Weeks 3-10. You must book your slot by end of Week 2.
 
 **Timeline:**
 - **By end of Week 2**: Submit booking preferences form (link will be posted on course website)
