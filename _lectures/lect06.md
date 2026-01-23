@@ -1,6 +1,6 @@
 ---
 num: "lect06"
-sequence: 7
+sequence: 6
 desc: "Iterators"
 ready: false
 pre-reading: "Savitch: 3.1 - 3.3"

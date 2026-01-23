@@ -1,6 +1,6 @@
 ---
 num: "lect05"
-sequence: 6
+sequence: 5
 desc: "BST operations and Tree traversals"
 ready: true
 pre-reading: "Savitch: 10.4, 10.5"

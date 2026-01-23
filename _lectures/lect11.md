@@ -1,7 +1,7 @@
 ---
 num: "lect11"
 sequence: 11
-desc: "Hashtables (QUIZ 3)"
+desc: "Hashtables"
 ready: false
 pdfurl: /lectures/CS24_Hashtables.pdf
 pre-reading: "Prof. Suri's CS 130A handout"

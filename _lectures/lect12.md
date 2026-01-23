@@ -1,7 +1,7 @@
 ---
 num: "lect12"
 sequence: 12
-desc: "Graph representation with applications to Neural Networks"
+desc: "Graph representation with applications to Neural Networks (QUIZ 3)"
 ready: false
 pre-reading: "Savitch: 15.1 - 15.2"
 pdfurl: /lectures/CS24_Graph_Representation.pdf
