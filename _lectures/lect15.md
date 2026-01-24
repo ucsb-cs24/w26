@@ -1,7 +1,7 @@
 ---
 num: "lect15"
 sequence: 15
-desc: "(PA03) DFS based backpropagation (QUIZ 4)"
+desc: "(PA03) DFS based backpropagation"
 ready: false
 pre-reading: " Required videos in pa03 tutorial"
 pdfurl: /lectures/CS24-NNBackprop.pdf
