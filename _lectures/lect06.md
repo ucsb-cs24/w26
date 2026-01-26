@@ -2,9 +2,10 @@
 num: "lect06"
 sequence: 6
 desc: "Iterators"
-ready: false
+ready: true
 pre-reading: "Savitch: 3.1 - 3.3"
 pdfurl: /lectures/CS24_BST_iterators.pdf
+handouturl: https://docs.google.com/document/d/1zRAMzRxcN4-1t1eZRv_eg_YZhknfd0_11OJLW6UgfCk/edit?usp=sharing
 ---
 
 # Code from lecture
@@ -13,11 +14,9 @@ pdfurl: /lectures/CS24_BST_iterators.pdf
 
 # Topics
 * Iterators: Abstraction for iterating through data structures
-* Implement an iterator for the custom BST class and solve related problems
+* Design an iterator for the custom BST class and solve related problems (you will implement this in pa01)
 
-Link to handout <https://docs.google.com/document/d/1_ho9TbXWU7d4MGrcsihm02BfMNyFKzitxiRW-v65G2g/edit?usp=sharing>
-Handout is also included in the pdf of the slides.
 
-Related leetcode problem: <https://leetcode.com/problems/binary-search-tree-iterator/description/?envType=problem-list-v2&envId=iterator>
+
 
 
