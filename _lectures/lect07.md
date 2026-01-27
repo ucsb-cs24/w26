@@ -1,17 +1,20 @@
 ---
 num: "lect07"
 sequence: 7
-desc: "Space complexity, best/worst case analysis (QUIZ 2)"
-ready: false
+desc: "BST and Big O review (QUIZ 2)"
+ready: true
 pre-reading: "Savitch: 1.2"
-pdfurl: /lectures/CS24_Complexity_Analysis.pdf
+pdfurl: /lectures/CS24_Lect07_Handout.pdf
+handouturl: https://docs.google.com/document/d/14HdKnR8MlSc_W2oCXoDsc6bM22DZIusPrfZR9ACTDNU/edit?usp=sharing
 ---
 # Code from lecture
 [{{site.lect_repo}}/tree/main/{{page.num}}]({{site.lect_repo}}/tree/main/{{page.num}})
 
-Lecture handout: <https://docs.google.com/document/d/1LCYoeDyQSKzUBoYgfZPpSz3z9kvBjX7HHj7AB9Ekt1o/edit?usp=sharing>
+
 # Topics
-* Definition of balanced BST
-* Analysis of code that involves std::set and iterators
-* Best case and worst case analysis of BST operations, amortized analysis via aggregation. 
-* Define space complexity of an algorithm
+* Big-O analysis of BST operations: connecting height to running time                                             
+* Best case (balanced) vs worst case (skewed) BST heights                                                         
+* Choosing traversals: preorder, inorder, postorder — when to use which                                           
+* Writing recursive BST functions: three approaches to isBST (naive → bottom-up → top-down)                       
+* Top-down vs bottom-up problem solving on trees                                                                  
+* Skipping unnecessary work: data-driven (BST property) vs progress-driven (early termination) 
