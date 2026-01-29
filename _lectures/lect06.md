@@ -5,6 +5,8 @@ desc: "Iterators"
 ready: true
 pre-reading: "Savitch: 3.1 - 3.3"
 pdfurl: /lectures/CS24_BST_iterators.pdf
+annotatedready: true
+annotatedpdfurl: /lectures/CS24_BST_iterators_ann.pdf
 handouturl: https://docs.google.com/document/d/1zRAMzRxcN4-1t1eZRv_eg_YZhknfd0_11OJLW6UgfCk/edit?usp=sharing
 ---
 
